@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Sync To CloudFlare
-        uses: michaelliao/sync-s3-compatible-action@v5
+        uses: michaelliao/sync-s3-compatible-action@v6
         env:
           SYNC_DIR: site
           SYNC_OPT_UNUSED: delete
@@ -27,6 +27,7 @@ jobs:
           SYNC_BUCKET: ${{ secrets.BUCKET }}
           SYNC_ACCESS_ID: ${{ secrets.ACCESS_KEY_ID }}
           SYNC_ACCESS_SECRET: ${{ secrets.ACCESS_KEY_SECRET }}
+          REMOTE_IGNORE_PREFIX: download/
 
       - name: Generate Index
         uses: michaelliao/build-index-action@v2
