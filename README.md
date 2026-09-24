@@ -1,4 +1,4 @@
-# dl.lxf.sh
+# download.puppylab.org
 
 Download site:
 
