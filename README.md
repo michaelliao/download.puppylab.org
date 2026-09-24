@@ -2,4 +2,4 @@
 
 Download site:
 
-[https://dl.lxf.sh](https://dl.lxf.sh)
+[https://download.puppylab.org](https://download.puppylab.org)
